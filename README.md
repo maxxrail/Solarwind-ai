@@ -28,7 +28,7 @@ This repository demonstrates how to use [Detectron2](https://github.com/facebook
 
 The **Inria Aerial Image Labeling Dataset** provides large aerial images, each with ground-truth building (rooftop) masks. We use **Mask R-CNN** (a model for instance segmentation) within **Detectron2** to learn how to segment these rooftops.
 
-The structure of the dataset is as follows and you can **download the dataset from our google drive**
+The structure of the dataset is as follows:
 AerialImageDataset/
 ├── train/
 │   ├── images/
@@ -59,7 +59,7 @@ AerialImageDataset/
 3. **Detectron2**  
    - Official binaries are for NVIDIA GPUs (CUDA). For CPU-only, see below.
 4. **Inria Aerial Dataset**  
-   - Download and extract from [Inria website](https://project.inria.fr/aerialimagelabeling/).
+   - Download and extract from [Google Drive]([https://project.inria.fr/aerialimagelabeling/](https://drive.google.com/drive/folders/1uM0dbL6uy0khDwD17VB70J8aOWIigQBm?usp=drive_link)).
 5. **Other Python packages**  
    - `opencv-python`, `matplotlib`, `numpy`, `tqdm`, etc.
 
