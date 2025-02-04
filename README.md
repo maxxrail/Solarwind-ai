@@ -39,10 +39,14 @@ AerialImageDataset/
 │       ├── 0.tif
 │       ├── 1.tif
 │       └── ...
-└── val/
+├── val/
 │   ├── images/
 │   │   └── ...
 │   └── gt/
+|   │   └── ...
+└── test/
+|   └── images/
+|   │   └── ...
 
 **Goal**  
 - Detect & segment building footprints (rooftops) from aerial images.  
@@ -71,8 +75,9 @@ If you have an **AMD Radeon GPU on Windows**, Detectron2 does not officially sup
 ## Project Structure
 
 SOLARWIND-AI/
-├── detectron2/ (optional local clone, or installed via pip)
+├── detectron2
 ├── model.ipynb
+├── output **PLEASE DO NOT COMMIT THIS FOLDER** 
 └── README.md
 ```
 
@@ -95,7 +100,7 @@ You can adapt as needed, but the **key** is:
 2. **Install Libraries** 
    - All necessary libraries are located in the first cell of the **model.ipynb** file
 
- 3. **Install Detectron2 (if not already installed)**  
+ 3. **Install Detectron2 (if not already located in repo**  
    - if detectron2 isnt already located in the project please uncomment the cloning code and dont forget to MOVE THE CONTENTS FROM THE SUBFOLDER DETECTRON2 FOLDER TO THE MAIN DETECTRON2 FOLDER!
 ---
 
@@ -134,19 +139,14 @@ cfg.SOLVER.MAX_ITER = 1000
 1. **CPU Training Is Slow**  
    - Consider cropping large 5000×5000 tiles into 512×512 or 1024×1024 patches.  
    - Keep `IMS_PER_BATCH` low if you’re running out of memory.
-
-2. **ValueError: mask_format=='polygon'**  
-   - Make sure your dataset returns valid polygons in double brackets, skipping degenerate contours.
-
-3. **Incompatible Shapes (Skip loading parameter...)**  
+2. **Incompatible Shapes (Skip loading parameter...)**  
    - Normal if you have 1 class vs. 80 classes from COCO. Detectron2 automatically re-initializes final layers.
-
-4. **Running Out of Memory**  
+3. **Running Out of Memory**  
    - Lower `IMS_PER_BATCH`.  
    - Crop images to smaller sizes.  
    - Decrease `NUM_WORKERS` if CPU usage is too high.
 
-5. **AMD Radeon GPU on Windows**  
+4. **AMD Radeon GPU on Windows**  
    - Not officially supported by Detectron2. Use CPU or an NVIDIA GPU. Linux + ROCm is advanced and not guaranteed.
 
 ---
