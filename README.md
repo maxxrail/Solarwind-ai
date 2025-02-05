@@ -30,7 +30,7 @@ The **Inria Aerial Image Labeling Dataset** provides large aerial images, each w
 
 The structure of the dataset is as follows:
 AerialImageDataset/
-├── train/
+├── train/<br>
 │   ├── images/
 │   │   ├── 0.tif
 │   │   ├── 1.tif
