@@ -50,22 +50,25 @@ AerialImageDataset/
 
 **Goal**  
 - Detect & segment building footprints (rooftops) from aerial images.  
-- Use a single class, `"roof"`, to keep it simple.
 
 ---
 
 ## Requirements
 
-1. **Python 3.8+**  
+1. **Python 3.8-3.10**  
    - Python 3.11 may not be fully supported by all libraries, so 3.9 or 3.10 is safer.
 2. **PyTorch**  
    - CPU or GPU version (NVIDIA GPU recommended for faster training).
+   - Installation part of code.
 3. **Detectron2**  
    - Official binaries are for NVIDIA GPUs (CUDA). For CPU-only, see below.
+   - Installation part of code.
 4. **Inria Aerial Dataset**  
-   - Download and extract from [Google Drive]([https://project.inria.fr/aerialimagelabeling/](https://drive.google.com/drive/folders/1uM0dbL6uy0khDwD17VB70J8aOWIigQBm?usp=drive_link)).
+   - Download and extract from [Google Drive]((https://drive.google.com/drive/folders/1uM0dbL6uy0khDwD17VB70J8aOWIigQBm?usp=drive_link)).
 5. **Other Python packages**  
    - `opencv-python`, `matplotlib`, `numpy`, `tqdm`, etc.
+6. **Visual C++ 14.0 or later**
+   - Download from [Microsoft Website](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
 
 **Note**  
 If you have an **AMD Radeon GPU on Windows**, Detectron2 does not officially support ROCm on Windows. Either run on CPU or switch to an NVIDIA GPU (or advanced Linux+ROCm setup).
