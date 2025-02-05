@@ -64,7 +64,7 @@ AerialImageDataset/
    - Official binaries are for NVIDIA GPUs (CUDA). For CPU-only, see below.
    - Installation part of code.
 4. **Inria Aerial Dataset**  
-   - Download and extract from [Google Drive]((https://drive.google.com/drive/folders/1uM0dbL6uy0khDwD17VB70J8aOWIigQBm?usp=drive_link)).
+   - Download and extract from [Google Drive](https://drive.google.com/drive/folders/1uM0dbL6uy0khDwD17VB70J8aOWIigQBm?usp=drive_link).
 5. **Other Python packages**  
    - `opencv-python`, `matplotlib`, `numpy`, `tqdm`, etc.
 6. **Visual C++ 14.0 or later**
