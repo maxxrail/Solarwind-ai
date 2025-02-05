@@ -78,7 +78,7 @@ If you have an **AMD Radeon GPU on Windows**, Detectron2 does not officially sup
 ## Project Structure
 
 SOLARWIND-AI/<br>
-├── detectron2<br>
+├── detectron2 **PLEASE DO NOT COMMIT THIS FOLDER**<br>
 ├── model.ipynb<br>
 ├── output **PLEASE DO NOT COMMIT THIS FOLDER**<br> 
 └── README.md<br>
