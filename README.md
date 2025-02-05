@@ -29,24 +29,24 @@ This repository demonstrates how to use [Detectron2](https://github.com/facebook
 The **Inria Aerial Image Labeling Dataset** provides large aerial images, each with ground-truth building (rooftop) masks. We use **Mask R-CNN** (a model for instance segmentation) within **Detectron2** to learn how to segment these rooftops.
 
 The structure of the dataset is as follows:
-AerialImageDataset/
+AerialImageDataset/<br>
 ├── train/<br>
-│   ├── images/
-│   │   ├── 0.tif
-│   │   ├── 1.tif
-│   │   └── ...
-│   └── gt/
-│       ├── 0.tif
-│       ├── 1.tif
-│       └── ...
-├── val/
-│   ├── images/
-│   │   └── ...
-│   └── gt/
-|   │   └── ...
-└── test/
-|   └── images/
-|   │   └── ...
+│   ├── images/<br>
+│   │   ├── 0.tif<br>
+│   │   ├── 1.tif<br>
+│   │   └── ...<br>
+│   └── gt/<br>
+│       ├── 0.tif<br>
+│       ├── 1.tif<br>
+│       └── ...<br>
+├── val/<br>
+│   ├── images/<br>
+│   │   └── ...<br>
+│   └── gt/<br>
+|   │   └── ...<br>
+└── test/<br>
+|   └── images/<br>
+|   │   └── ...<br>
 
 **Goal**  
 - Detect & segment building footprints (rooftops) from aerial images.  
@@ -77,11 +77,11 @@ If you have an **AMD Radeon GPU on Windows**, Detectron2 does not officially sup
 
 ## Project Structure
 
-SOLARWIND-AI/
-├── detectron2
-├── model.ipynb
-├── output **PLEASE DO NOT COMMIT THIS FOLDER** 
-└── README.md
+SOLARWIND-AI/<br>
+├── detectron2<br>
+├── model.ipynb<br>
+├── output **PLEASE DO NOT COMMIT THIS FOLDER**<br> 
+└── README.md<br>
 ```
 
 You can adapt as needed, but the **key** is:
