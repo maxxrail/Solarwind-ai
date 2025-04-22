@@ -1,6 +1,5 @@
 # Solarwind-ai
-Below is a **single Markdown document** containing everything you need. It’s entirely in Markdown format, including headings, lists, code fences, etc. Copy this into a file named **`README.md`** (or any Markdown file) for a complete overview.
-
+For more information please find a link to our report here:
 ---
 
 # Rooftop Detection with Detectron2
