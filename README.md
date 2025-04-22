@@ -139,7 +139,7 @@ cfg.SOLVER.MAX_ITER = 1000
 
 ## Tips & Troubleshooting
 
-1. **CPU Training Is Slow**  
+1. **Training Is Slow**  
    - Consider cropping large 5000×5000 tiles into 512×512 or 1024×1024 patches.  
    - Keep `IMS_PER_BATCH` low if you’re running out of memory.
 2. **Incompatible Shapes (Skip loading parameter...)**  
