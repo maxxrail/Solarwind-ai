@@ -1,5 +1,6 @@
 # Solarwind-ai
-For more information please find a link to our report here:
+
+For more information please find our report in the project files
 ---
 
 # Rooftop Detection with Detectron2
